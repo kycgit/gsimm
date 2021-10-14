@@ -5393,7 +5393,7 @@
   <\collection>
     <associate|font|EBS HMJE Saeron L>
     <associate|font-family|rm>
-    <associate|page-medium|papyrus>
+    <associate|page-medium|paper>
     <associate|preamble|false>
   </collection>
 </initial>
