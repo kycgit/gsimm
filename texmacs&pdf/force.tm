@@ -1357,7 +1357,7 @@
   \<#D544\>\<#C694\>\<#D558\>\<#B2E4\>\<#B294\> \<#C0DD\>\<#AC01\>\<#C744\>
   \<#D45C\>\<#D604\>\<#D588\>\<#B2E4\>. \<#AC00\>\<#C0C1\>
   \<#CF54\>\<#B4DC\>\<#B85C\> \<#D45C\>\<#D604\>\<#D558\>\<#BA74\>
-  <math|a=a+><math|<frac|3|c<rsup|2>>*v\<times\>a\<times\>v>
+  <math|a=a+><math|<frac|3|2*c<rsup|2>>*v\<times\>a\<times\>v>
   \<#D56D\>\<#C744\> \<#CF54\>\<#B4DC\>\<#C5D0\>
   \<#CD94\>\<#AC00\>\<#D558\>\<#C5EC\> \<#C2DC\>\<#BBAC\>\<#B808\>\<#C774\>\<#C158\>\<#C744\>
   \<#D574\>\<#BCF4\>\<#C558\>\<#ACE0\>. \<#C774\> \<#AE00\>\<#C744\>
@@ -1376,7 +1376,7 @@
   rotation to the gravitational acceleration <math|a=<frac|G*M|r<rsup|2>>> as
   corrections. It was for expressing the idea felt in the above paper that
   three times more is needed than the Thomas-Wigner rotation. In virtual
-  code, \ <math|a=a+><math|<frac|3|c<rsup|2>>*v\<times\>a\<times\>v> was
+  code, \ <math|a=a+><math|<frac|3|2*c<rsup|2>>*v\<times\>a\<times\>v> was
   added to the code to simulate. As predicted by writing of this article, the
   perihelion precession of Mercury was correctly simulated at once with the
   simple correction.
@@ -1428,7 +1428,7 @@
   \<#C2DC\>\<#BBAC\>\<#B808\>\<#C774\>\<#C158\>\<#C5D0\>
   \<#AC00\>\<#C18D\>\<#B3C4\> \<#D56D\>\<#C744\>
   \<#BCF4\>\<#C815\>\<#D558\>\<#AE30\>\<#C704\>\<#D574\>
-  <math|a=a+><math|<frac|3|c<rsup|2>>*v\<times\>a\<times\>v>
+  <math|a=a+><math|<frac|3|2*c<rsup|2>>*v\<times\>a\<times\>v>
   \<#D56D\>\<#BAA9\>\<#B9CC\> \<#CD94\>\<#AC00\>\<#D558\>\<#BA74\>
   \<#D544\>\<#C694\>\<#D55C\> \<#C804\>\<#BD80\>\<#C774\>\<#B2E4\>.
   \<#B098\>\<#C758\> \<#D504\>\<#B85C\>\<#ADF8\>\<#B7A8\>\<#C5D0\>\<#C11C\>\<#B294\>
@@ -1445,7 +1445,7 @@
   using a language or tool they are comfortable with and trying it out
   themselves. In order to correct the acceleration term in the simulation
   based on simple Newton's law, all you need is to add
-  \ <math|a=a+><math|<frac|3|c<rsup|2>>*v\<times\>a\<times\>v> term. In my
+  \ <math|a=a+><math|<frac|3|2*c<rsup|2>>*v\<times\>a\<times\>v> term. In my
   program, the (setf (pobj-a j) ag) part of the function (defun next-dn . . )
   was corrected as (setf (pobj-a j) [ag pobj-v j X* ag X* pobj-v j .* 1.5 %c
   .+ ./ ^ 2.0]) at the function (defun next-d ... ) in the 'gsimm.lisp' file,
@@ -1496,9 +1496,9 @@
   \<#C2E4\>\<#D589\>\<#D558\>\<#C5EC\> \<#C791\>\<#B3D9\>
   \<#C2DC\>\<#D0A4\>\<#B3C4\>\<#B85D\> \<#D55C\>\<#B2E4\>.
 
-  Download the program from github or copy the programs attached at the end
-  of this article and save them all in the same folder, then run common-lisp
-  in the same folder to make it work.
+  Download the program from github(https://github.com/kycgit/gsimm) or copy
+  the programs attached at the end of this article and save them all in the
+  same folder, then run common-lisp in the same folder to make it work.
 
   \;
 
@@ -2087,7 +2087,7 @@
 
   \<#B274\>\<#D2BC\> \<#C5ED\>\<#D559\>\<#C5D0\> \<#AE30\>\<#BC18\>\<#D55C\>
   \<#C2DC\>\<#BBAC\>\<#B808\>\<#C774\>\<#C158\>\<#C5D0\>
-  \<#AC04\>\<#B2E8\>\<#D55C\> <math|<wide|a|\<vect\>>=<wide|a|\<vect\>>+><math|<frac|3|c<rsup|2>>*<around*|(|<wide|v|\<vect\>>\<times\><wide|a|\<vect\>>\<times\><wide|v|\<vect\>>|)>>
+  \<#AC04\>\<#B2E8\>\<#D55C\> <math|<wide|a|\<vect\>>=<wide|a|\<vect\>>+><math|<frac|3|2*c<rsup|2>>*<around*|(|<wide|v|\<vect\>>\<times\><wide|a|\<vect\>>\<times\><wide|v|\<vect\>>|)>>
   \<#B77C\>\<#B294\> \<#BCF4\>\<#C815\>\<#C744\>
   \<#CD94\>\<#AC00\>\<#D558\>\<#B294\> \<#AC83\>\<#B9CC\>\<#C73C\>\<#B85C\>
   \<#C77C\>\<#BC18\>\<#C0C1\>\<#B300\>\<#B860\>\<#C758\>
@@ -2107,7 +2107,7 @@
 
   It was confirmed that the result called the triumph of general relativity
   can be simulated just by adding a simple
-  <math|<wide|a|\<vect\>>=<wide|a|\<vect\>>+><math|<frac|3|c<rsup|2>>*<around*|(|<wide|v|\<vect\>>\<times\><wide|a|\<vect\>>\<times\><wide|v|\<vect\>>|)>>
+  <math|<wide|a|\<vect\>>=<wide|a|\<vect\>>+><math|<frac|3|2*c<rsup|2>>*<around*|(|<wide|v|\<vect\>>\<times\><wide|a|\<vect\>>\<times\><wide|v|\<vect\>>|)>>
   correction to the simulation based on Newtonian mechanics. I found the
   answer to the motion of Mercury's orbit simply by simulating a physical
   concept without any mathematical tricks. Now I will check the physical
@@ -5391,7 +5391,7 @@
 
 <\initial>
   <\collection>
-    <associate|font|EBS HMJE Saeron L>
+    <associate|font|EBS HMJE Saeron R>
     <associate|font-family|rm>
     <associate|page-medium|paper>
     <associate|preamble|false>
