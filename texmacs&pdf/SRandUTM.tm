@@ -1022,6 +1022,32 @@
     </unfolded-io-math>
 
     <\unfolded-io-math>
+      (120) -\<gtr\>\ 
+    <|unfolded-io-math>
+      <with|mode|prog|integrate(<math|<frac|1|<sqrt|1-<frac|2*G*M|r*c<rsup|2>>>>>,r=2*G*M/c^2..p*2*G*M/c^2,"noPole")>
+    <|unfolded-io-math>
+      \;
+
+      <with|mode|math|<frac|G*M*log(<frac|2*c<rsup|2>*p*<sqrt|<frac|p-1|p>>+2*c<rsup|2>*p-c<rsup|2>|p>)-G*M*log(<frac|-2*c<rsup|2>*p*<sqrt|<frac|p-1|p>>+2*c<rsup|2>*p-c<rsup|2>|p>)+4*G*M*p*<sqrt|<frac|p-1|p>>|2*c<rsup|2>>>
+
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Type: Union(f1:
+      OrderedCompletion(Expression(Integer)),...)
+    </unfolded-io-math>
+
+    <\unfolded-io-math>
+      (121) -\<gtr\>\ 
+    <|unfolded-io-math>
+      limit<around*|(|-2*c<rsup|2>*p*<sqrt|<frac|p-1|p>>+2*c<rsup|2>*p-c<rsup|2>,p=%plusInfinity|)>
+    <|unfolded-io-math>
+      \;
+
+      <with|mode|math|0>
+
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Type:
+      Union(OrderedCompletion(Expression(Integer)),...)
+    </unfolded-io-math>
+
+    <\unfolded-io-math>
       (20) -\<gtr\>\ 
     <|unfolded-io-math>
       integrate<around*|(|<sqrt|1+<frac|2*G*M|r*c<rsup|2>>>,r|)>
@@ -1032,6 +1058,32 @@
 
       \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Type:
       Union(Expression(Integer),...)
+    </unfolded-io-math>
+
+    <\unfolded-io-math>
+      (122) -\<gtr\>\ 
+    <|unfolded-io-math>
+      <with|mode|prog|integrate(<math|<sqrt|1+<frac|2*G*M|r*c<rsup|2>>>>,r=0..p*2*G*M/c^2,"noPole")>
+    <|unfolded-io-math>
+      \;
+
+      <with|mode|math|<frac|G*M*log(<frac|2*c<rsup|2>*p*<sqrt|<frac|p+1|p>>+2*c<rsup|2>*p+c<rsup|2>|p>)-G*M*log(<frac|-2*c<rsup|2>*p*<sqrt|<frac|p+1|p>>+2*c<rsup|2>*p+c<rsup|2>|p>)+4*G*M*p*<sqrt|<frac|p+1|p>>|2*c<rsup|2>>>
+
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Type: Union(f1:
+      OrderedCompletion(Expression(Integer)),...)
+    </unfolded-io-math>
+
+    <\unfolded-io-math>
+      (123) -\<gtr\>\ 
+    <|unfolded-io-math>
+      limit<around*|(|-2*c<rsup|2>*p*<sqrt|<frac|p+1|p>>+2*c<rsup|2>*p+c<rsup|2>,p=%plusInfinity|)>
+    <|unfolded-io-math>
+      \;
+
+      <with|mode|math|0>
+
+      \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Type:
+      Union(OrderedCompletion(Expression(Integer)),...)
     </unfolded-io-math>
 
     <\unfolded-io-math>
